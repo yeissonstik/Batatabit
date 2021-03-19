@@ -209,3 +209,153 @@ body{
     color: #808080;
     font-size: 14px;
 }
+
+.plans__hero{
+    height: 380px;
+    width: 100%;
+    margin: auto;
+    background: url('../images/movil_bitcoinbaby\ 1.png') no-repeat;
+    background-size: cover;
+}
+
+.plans__hero h2 {
+    text-align: center;
+    padding-top: 55px;
+    color: #FFFFFF;
+}
+
+.plans__title{
+    margin-top: 80px;
+    color: #201E1C;
+    text-align: center;
+}
+
+.plans__text{
+    text-align: center;
+    margin-top: 20px;
+    color: #757575;
+}
+
+
+
+
+
+.plans__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    width: 190px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans__card h3 {
+    margin: 15px 0;
+}
+
+.plans__card p {
+    margin: 20px 0;
+    color: #757575;
+}
+
+.plans__card button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: inherit;
+    height: 48px;
+    width: 150px;
+    margin: auto;
+    border: #F7931A 2px solid;
+    border-radius: 5px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.prices{
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+
+.signo{
+    position: absolute;
+    color: #757575;
+    left: 0;
+}
+
+.questions{
+    padding: 40px 0;
+}
+
+.questions__title{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.questions__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: #F7931A;
+    color: white;
+    height: 20vh;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer__logo img{
+    margin-left: calc(28%);
+}
+
+.footer__logo p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
