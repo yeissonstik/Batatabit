@@ -1,0 +1,22 @@
+{
+  "name": "batatabit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeissonstik/Batatabit.git"
+  },
+  "author": "yeissonstik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeissonstik/Batatabit/issues"
+  },
+  "homepage": "https://github.com/yeissonstik/Batatabit#readme",
+  "devDependencies": {
+    "webpack-dev-server": "3.11.2"
+  }
+}
