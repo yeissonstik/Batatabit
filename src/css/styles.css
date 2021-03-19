@@ -9,6 +9,9 @@
     background: #FAF8F7;
 
 }
+
+/*  header */
+
 .header__section {
     position: relative;
     display: flex;
@@ -65,6 +68,9 @@
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
+
+
+/* section 1 */
 
 .exchange-rate__image{
     position: relative;
@@ -169,6 +175,9 @@
     display: none;
 }
 
+
+/* section 2 */
+
 .benefits__section{
     background: #201E1C;
     padding: 50px 0;
@@ -215,6 +224,9 @@
     width: 100%;
 }
 
+
+/* section 3 */
+
 .plans__hero{
     height: 380px;
     width: 100%;
@@ -241,6 +253,8 @@
     margin-top: 20px;
     color: #757575;
 }
+
+/* carousel */
 
 .carousel{
     padding: 40px 0;
@@ -324,6 +338,8 @@
     left: 0;
 }
 
+/* section 4 */
+
 .questions__section{
     padding: 40px 0;
 }
@@ -353,6 +369,8 @@
 
 }
 
+/* footer */
+
 footer{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -380,6 +398,7 @@ footer ul {
 }
 
 
+/* mobil a tablet */
 
 @media screen and (min-width: 420px) and (max-width: 649px) {
     .header__title{
@@ -394,6 +413,8 @@ footer ul {
         margin-bottom: 40px;
     }
 }
+
+/*  tablet a desktop */
 
 @media screen and (min-width: 650px) and (max-width: 900px) {
     .header__title{
@@ -482,6 +503,8 @@ footer ul {
 
 
 }
+
+/*  desktop */
 
 @media screen and (min-width: 901px) {
     .header__section{
