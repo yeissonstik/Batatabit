@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+}
+.header__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header__logo__image{
+    height: 25px;
+    width: 40px;
+}
+
+.header__logo__title{
+    color: #F7931A;
+}
+
+.header__title{
+    color: white;
+    width: 80%;
+}
+
+.header__text{
+    color: #FFE9D4;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.header__button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: calc(50% - 110px);
+    height: 48px;
+    width: 229px;
+    right: 0;
+    bottom: -20px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 700;
+    background: #FAF8F7;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+
+
+#particles-js{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.exchange-rate__image img{
+    position: absolute;
+    width: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
