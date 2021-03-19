@@ -4,6 +4,8 @@
     font-family: 'DM Sans', sans-serif;
 }
 body{
+    background: #FAF8F7;
+
 }
 .header__section {
     position: relative;
@@ -61,21 +63,149 @@ body{
     background: #FAF8F7;
     border: none;
     border-radius: 5px;
-
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-
-
-
-#particles-js{
+.exchange-rate__image{
     position: relative;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(255, 255, 255);
+    height: 250px;
+    background-color: #FAF8F7;
+    margin: 40px auto;
+    width: 80%;
 }
-.exchange-rate__image img{
+.exchange-rate__image img {
     position: absolute;
-    width: 300px;
-    top: calc(50% - 150px);
-    left: calc(50% - 150px);
+    width: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+
+.exchange-rate__title{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.exchange-rate__text{
+    text-align: center;
+    font-size: 14px;
+    width: 90%;
+    margin: 25px auto;
+    color: #BABABA;
+}
+
+.exchange-rate__information{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+}
+
+.exchange-rate__information__title-coins{
+    margin: 10px 0;
+    color: #F7931A;
+}
+
+.table__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #B5B0AC;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px 0;
+    
+}
+
+.exchange-rate__information__title-commissions{
+    margin: 10px 0;
+    color: #1A9AF7;
+}
+
+.table__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.table__item span {
+    color:#757575;
+}
+
+.table__row{
+    width: 12px;
+    height: 18px;
+    margin: auto;
+    display: inline-block;
+    background: url('../images/middle_Vector.svg') no-repeat;
+    background-size: cover;
+}
+
+.cons_values{
+    background: #FFE9D4;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: calc(50% - 80px);
+}
+
+.commissions__values{
+    background: #E7F5FF;
+}
+
+.hide{
+    display: none;
+}
+
+.benefits__section{
+    background: #201E1C;
+    padding: 50px 0;
+}
+
+.benefits__title{
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.benefits__text{
+    margin: 30px auto;
+    text-align: center;
+    color: #808080;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 152px;
+    width: 80%;
+    margin: 10px auto;
+    background: #282623;
+    padding: 20px;
+}
+
+.card img {
+    height: 25px;
+    width: 25px;
+    margin: 10px 0;
+}
+
+.card__title{
+    color: #FFFFFF;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.card p {
+    color: #808080;
+    font-size: 14px;
 }
