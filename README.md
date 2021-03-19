@@ -1,5 +1,4 @@
 # Batatabit
-# Batatabit
 [![batatabit](https://batatabitbystik.netlify.app/src/images/Group%2017.svg "batatabit")](https://batatabitbystik.netlify.app/ "batatabit")
 
 # Proyecto batatabit
