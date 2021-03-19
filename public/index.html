@@ -17,7 +17,7 @@
         </figure>
         <h2 class="header__title">La próxima revolución en el intercambio de criptomonedas.</h2>
         <p class="header__text">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-        <button class="header__button">Conoce Nuestros Planes <img src="../src/images/mdi_keyboard_arrow_down.svg" alt=""></button>
+        <a href="#info"><button class="header__button">Conoce Nuestros Planes <img src="../src/images/mdi_keyboard_arrow_down.svg" alt=""></button></a> 
     </header>
 
     <main>
@@ -30,8 +30,9 @@
             <p class="exchange-rate__text">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             
         <div class="exchange-rate__information">
-            <div class="coins" id="coins">
-                <h3 class="exchange-rate__information__title-coins">Monedas</h3>
+            <div class="coins__container">
+                <div class="coins" id="coins">
+                    <h3 class="exchange-rate__information__title-coins">Monedas</h3>
                 <div>
                     <div class="table__container">
                         <div class="table__item"><h4>Bitcoin</h4></div>
@@ -47,31 +48,34 @@
                         <div class="table__item"><span>$ 4.96</span><img src="../src/images/trending-down 1.svg" alt=""></div>
                     </div>
                 </div>
-                <span class="values values--coin">Valores en  <strong>$ USD</strong></span>
+                    <span class="values values--coin">Valores en  <strong>$ USD</strong></span>
+                </div>
             </div>
 
-            <div class="commissions hide" id="commissions">
-                <h3 class="exchange-rate__information__title-commissions">Comisiones</h3>
-                <div class="table__container">
-                        <div class="table__item"><h4>Bitcoin</h4></div>
-                        <div class="table__item"><span>$ 12.96</span></div>
+            <div class="commissions__container hide">
+                <div class="commissions" id="commissions">
+                    <h3 class="exchange-rate__information__title-commissions">Comisiones</h3>
+                    <div class="table__container">
+                            <div class="table__item"><h4>Bitcoin</h4></div>
+                            <div class="table__item"><span>$ 12.96</span></div>
+                            
+                            <div class="table__item"><h4>Ethereum</h4></div>
+                            <div class="table__item"><span>$ 13.07</span></div>
+                            
+                            <div class="table__item"><h4>Ripple</h4></div>
+                            <div class="table__item"><span>$ 13.15</span></div>
                         
-                        <div class="table__item"><h4>Ethereum</h4></div>
-                        <div class="table__item"><span>$ 13.07</span></div>
-                        
-                        <div class="table__item"><h4>Ripple</h4></div>
-                        <div class="table__item"><span>$ 13.15</span></div>
-                    
-                        <div class="table__item"><h4>Stellar</h4></div>
-                        <div class="table__item"><span>$ 14.96</span></div>
+                            <div class="table__item"><h4>Stellar</h4></div>
+                            <div class="table__item"><span>$ 14.96</span></div>
+                    </div>
+                    <span class="values values--comm">Valores en  <strong>$ USD</strong></span>
                 </div>
-                <span class="values values--comm">Valores en  <strong>$ USD</strong></span>
             </div>
             <span id="table__row" class="table__row"></span>
-        </div>
+    </div>
     </section>
 
-    <section class="benefits__section"> 
+    <section class="benefits__section" id="info"> 
 
         <h2 class="benefits__title">Te ayudamos a tomar la mejor decisión, siempre.</h2>
         <p class="benefits__text">Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>

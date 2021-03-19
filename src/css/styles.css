@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'DM Sans', sans-serif;
 }
+
 .body{
     background: #FAF8F7;
 
@@ -194,6 +195,7 @@
     margin: 10px auto;
     background: #282623;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .benefits__card img {
@@ -342,7 +344,6 @@
     align-items: center;
     width: 90%;
     margin: 20px 15px 0 15px;
-    color: #;
 }
 
 .question__answers{
@@ -394,7 +395,7 @@ footer ul {
     }
 }
 
-@media screen and (min-width: 650px) and (max-width: 820px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
     .header__title{
         margin-bottom: 30px;
         width: 80%
@@ -432,8 +433,111 @@ footer ul {
 
     }
 
-    .commissions{
+    .commissions__container{
         display: block;
+    }
+
+    .table__row{
+        display: none;
+    }
+
+    .values {
+        margin: auto;
+    }
+
+    .benefits__card--container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .plans__hero{
+        text-align: center;
+        background-position: center;
+        height: 450px;
+    }
+    .plans__hero h2{
+        padding-top: calc(25%);
+    }
+
+    footer{
+        grid-template-columns: 50% 50%;
+    }
+
+    footer ul {
+        margin-left: calc(25%);
+    }
+
+    footer figure {
+        margin-left: calc(25%);
+    }
+
+    .footer__logo{
+        width: 250px;
+    }
+
+    .footer__logo img {
+        width: 100px;
+        margin-left: calc(50% - 50px);
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 901px) {
+    .header__section{
+        height: 60vh;
+        justify-content: center;
+    }
+    .header__title{
+        margin-bottom: 30px;
+        width: 50%
+    }
+    .header__text{
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .exchange-rate__image{
+        width: 40%;
+        margin: 100px auto;
+    }
+
+    .questions__title{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .exchange-rate__title{
+        font-size: 2rem;
+        margin: 30px auto;
+    }
+
+    .exchange-rate__text{
+        font-size: 1.2rem;
+    }
+
+    .exchange-rate__information{
+        
+        height: 100vh;
+        width: 90%;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+
+    }
+
+    .coins__container{
+        margin: auto;
+    }
+
+
+    .commissions__container{
+        display: block;
+        margin: auto;
+    }
+
+
+    .table__container{
+        width: 300px;
     }
 
     .table__row{
@@ -455,7 +559,12 @@ footer ul {
         height: 450px;
     }
     .plans__hero h2{
-        padding-top: calc(25%);
+        padding-top: calc(15%);
+    }
+
+    .questions__section{
+        width: 80%;
+        margin: auto;
     }
 
     footer{
@@ -463,6 +572,10 @@ footer ul {
     }
 
     footer ul {
+        margin-left: calc(25%);
+    }
+
+    footer figure {
         margin-left: calc(25%);
     }
 
@@ -474,6 +587,11 @@ footer ul {
         width: 100px;
         margin-left: calc(50% - 50px);
         margin-bottom: 10px;
+    }
+
+    .carousel{
+        width: 50%;
+        margin: auto;
     }
 
 }

@@ -1,19 +1,15 @@
 const tableRow = document.getElementById('table__row')
-const coinsTable = document.getElementById('coins')
-const commissionsTable = document.getElementById('commissions')
+const coinsTable = document.querySelector('.coins__container')
+const commissionsTable = document.querySelector('.commissions__container')
 
 tableRow.addEventListener('click', function(){
     if(!coinsTable.classList.contains('hide')){
         coinsTable.classList.add('hide')
         commissionsTable.classList.remove('hide')
     }else{
-        commissionsTable.classList.add('hide')
         coinsTable.classList.remove('hide')
+        commissionsTable.classList.add('hide')
     }
 })
 
-const query = window.matchMedia("(min-width: 800px)")
-        
-if(query.matches){
-    
-}
+
