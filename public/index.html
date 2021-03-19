@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batatabit</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header class="header__section">
         <figure class="header__logo">
-            <img class="header__logo__image" src="../src/images/Group 16.png" alt="">
+            <img class="header__logo__image" src="../src/images/Group 17.svg" alt="">
             <h1 class="header__logo__title">Batatabit</h1>
         </figure>
         <h2 class="header__title">La próxima revolución en el intercambio de criptomonedas.</h2>
@@ -46,7 +47,7 @@
                         <div class="table__item"><span>$ 4.96</span><img src="../src/images/trending-down 1.svg" alt=""></div>
                     </div>
                 </div>
-                <span class="cons_values">Valores en  <strong>$ USD</strong></span>
+                <span class="values values--coin">Valores en  <strong>$ USD</strong></span>
             </div>
 
             <div class="commissions hide" id="commissions">
@@ -64,9 +65,9 @@
                         <div class="table__item"><h4>Stellar</h4></div>
                         <div class="table__item"><span>$ 14.96</span></div>
                 </div>
-                <span class="commissions__values">Valores en  <strong>$ USD</strong></span>
+                <span class="values values--comm">Valores en  <strong>$ USD</strong></span>
             </div>
-            <span class="table__row"></span>
+            <span id="table__row" class="table__row"></span>
         </div>
     </section>
 
@@ -75,31 +76,33 @@
         <h2 class="benefits__title">Te ayudamos a tomar la mejor decisión, siempre.</h2>
         <p class="benefits__text">Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
 
-        <div class="card">
-            <img src="../src/images/clock 1.svg" alt="">
-            <h3 class="card__title">Tiempo real</h3>
-            <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-        </div>
+        <div class="benefits__card--container">
+            <div class="benefits__card">
+                <img src="../src/images/clock 1.svg" alt="">
+                <h5 class="benefits__card--title">Tiempo real</h5>
+                <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+            </div>
+            
+            <div class="benefits__card">
+                <img src="../src/images/eye 1.svg" alt="">
+                <h5 class="benefits__card--title">No hay tasas escondidas</h5>
+                <p>Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+            </div>
 
-        <div class="card">
-            <img src="../src/images/eye 1.svg" alt="">
-            <h3 class="card__title">No hay tasas escondidas</h3>
-            <p>Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-        </div>
+            <div class="benefits__card">
+                <img src="../src/images/dollar-sign 1.svg" alt="">
+                <h5 class="benefits__card--title">Compara monedas</h5>
+                <p>No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+            </div>
 
-        <div class="card">
-            <img src="../src/images/dollar-sign 1.svg" alt="">
-            <h3 class="card__title">Compara monedas</h3>
-            <p>No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-        </div>
-
-        <div class="card card__final">
-            <img src="../src/images/check-circle 1.svg" alt="">
-            <h3 class="card__title">Información confiable</h3>
-            <p>Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+            <div class="benefits__card">
+                <img src="../src/images/check-circle 1.svg" alt="">
+                <h5 class="benefits__card--title">Información confiable</h5>
+                <p>Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+            </div>
         </div>
     </section>
-
+    
     <section class="plans_section">
         <figure class="plans__hero">
             <h2>Conócelo hoy.</h2>
@@ -108,82 +111,132 @@
         <h2 class="plans__title">Escoge el plan que mejor se ajuste a ti.</h2>
         <p class="plans__text"> Cualquier plan te da acceso completo a nuestra plataforma.</p>
 
-        <div class="plans_carousel">
-            <button class="arrow arrow-left"></button>
-            <div class="window">
-                <div class="plans-container">
-                    
-                    <div class="plans__card">
-                        <span class="plans__card__title"></span>
-                        <h3>Pago Anual</h3>
-                        <div class="prices"><span class="signo">$</span><span class="price">5</span></div>
-                        <p>*Plan básico para mantenerte informado</p>
-                        <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+        <div id="carouselExampleDark" class="carousel carousel-dark" data-bs-touch="false" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item w-80">
+                        <div class="plans__card d-block">
+                            <div class="plans__card--container">
+                                <h4>Pago Anual</h4>
+                                <div class="prices">
+                                    <span class="signo">$</span><span class="price">5</span>
+                                </div>
+                                <p>*Plan básico para mantenerte informado</p>
+                                <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="plans__card">
-                        <span class="plans__card__title"></span>
-                        <h3>Pago Anual</h3>
-                        <span>$</span><span>39</span>
-                        <p>*Ahorras $129 comparado al plan mensual.</p>
-                        <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+                    <div class="carousel-item w-80 active">
+                        <div class="plans__card d-block ">
+                            <div class="plans__card--container">
+                                <span class="plans__card--recomended">Recomendado</span>
+                                <h4>Pago Anual</h4>
+                                <div class="prices">
+                                    <span class="signo">$</span><span class="price">49</span>
+                                </div>
+                                <p>*Ahorras $129 comparado al plan mensual.</p>
+                            </div>
+                            <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+                        </div>
                     </div>
 
-                    <div class="plans__card">
-                        <h3>Acceso de por vida</h3>
-                        <span>$</span><span>99</span>
-                        <p>*Ahorras $999+ comparado al plan anual.</p>
-                        <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+                    <div class="carousel-item w-100">
+                        <div class="plans__card d-block ">
+                            <div class="plans__card--container">
+                                <h4>Acceso de por vida</h4>
+                                <div class="prices">
+                                    <span class="signo">$</span><span class="price">99</span>
+                                </div>
+                                <p>*Ahorras $999+ comparado al plan anual.</p>
+                                <button>Escoger este <img src="../src/images/arrow-right 1.svg" alt=""></button>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
-            </div>
-                <button class="arrow arrow-right" aria-label="forward button"></button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
         </div>
+
+        
     </section>
 
-    <section class="questions">
+    <section class="questions__section">
 
         <h1 class="questions__title">¿Preguntas? Aquí estamos para ti.</h1>
 
         <ul class="questions__container">
-                <li class="questions__button">
-                    <p>Batabit me permite hacer compras en su plataforma? </p>
-                    <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                <li>
+                    <div class="questions__button" data-bs-toggle="collapse" href="#answer1" role="button">
+                        <p>Batabit me permite hacer compras en su plataforma? </p>
+                        <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                    </div>
+                    <div class="question__answers collapse" id="answer1">
+                        <p>No. Batabit es una plataforma exclusivamente para consulta de información y toma de decisiones. Todavía no ofrecemos servicios de compra o venta.</p>
+                    </div>
                 </li>
-                <li class="questions__button">
-                    <p>Qué es Bitcoin?</p>
-                    <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                
+                <li>
+                    <div class="questions__button" data-bs-toggle="collapse" href="#answer2" role="button">
+                        <p>Qué es Bitcoin?</p>
+                        <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                    </div>
+                    <div class="question__answers collapse" id="answer2">
+                        <p>No. Batabit es una plataforma exclusivamente para consulta de información y toma de decisiones. Todavía no ofrecemos servicios de compra o venta.</p>
+                    </div>
                 </li>
-                <li class="questions__button">
-                    <p>Cómo puedo realizar una transacción en bitcoins?</p>
-                    <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                
+                <li>
+                    <div class="questions__button" data-bs-toggle="collapse" href="#answer3" role="button">
+                        <p>Cómo puedo realizar una transacción en bitcoins?</p>
+                        <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                    </div>
+                    <div class="question__answers collapse" id="answer3">
+                        <p>No. Batabit es una plataforma exclusivamente para consulta de información y toma de decisiones. Todavía no ofrecemos servicios de compra o venta.</p>
+                    </div>
                 </li>
-                <li class="questions__button">
-                    <p>Cómo aseguro mis compras? </p>
-                    <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                
+                <li>
+                    <div class="questions__button" data-bs-toggle="collapse" href="#answer4" role="button">
+                        <p>Cómo aseguro mis compras? </p>
+                        <img src="../src/images/mdi_keyboard_arrow_down.svg" alt="">
+                    </div>
+                    <div class="question__answers collapse" id="answer4">
+                        <p>No. Batabit es una plataforma exclusivamente para consulta de información y toma de decisiones. Todavía no ofrecemos servicios de compra o venta.</p>
+                    </div>
                 </li>
-        </ul>
-
-    </section>    
-</main>
+            </ul>
+            
+        </section>    
+    </main>
 
 <footer>
+    <div>
+        <ul>
+            <li><p>Cómo aseguro mis compras?</p></li>
+            <li><p>Crunchbase</p></li>
+            <li><p>Hackernews</p></li>
+        </ul>
+    </div>
 
-    <ul>
-        <li><p>Cómo aseguro mis compras?</p></li>
-        <li><p>Crunchbase</p></li>
-        <li><p>Hackernews</p></li>
-    </ul>
-
-    <div class="footer__logo">
-        <img src="../src/images/Group 16.png" alt="">
-        <p>®Batatabit 2020</p>
+    <div>
+        <figure class="footer__logo">
+            <img src="../src/images/Group 16.png" alt="">
+            <p>®Batatabit 2020</p>
+        </figure>
     </div>
 </footer>
 
-<script defer src="../src//js/particles.js"></script>
+<script defer src="../src/js/particles.js"></script>
     <script defer src="../src/js/app.js"></script>
-    <script defer src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script defer src="../src/js/index.js"></script>
 </body>
 </html>
